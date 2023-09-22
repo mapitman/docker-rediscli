@@ -1,4 +1,4 @@
-FROM alpine:3.8
+FROM alpine:3.18
 ARG VCS_REF
 ARG BUILD_DATE
 MAINTAINER Mark Pitman <mark.pitman@gmail.com>
