@@ -1,5 +1,5 @@
 NAME = mapitman/redis-cli
-TAG := $(shell git describe --exact-match --tags $(git log -n1 --pretty='%h'))
+TAG := $(shell git describe --exact-match --tags $(shell git log -n1 --pretty='%h') 2>/dev/null || git rev-parse --short HEAD)
 
 default: build
 
